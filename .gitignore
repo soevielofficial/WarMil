@@ -3,6 +3,7 @@
 ################################################################################
 
 /x64/Release
+<<<<<<< HEAD
 /.vs/WarMil/FileContentIndex
 /.vs/WarMil/v17/ipch/AutoPCH
 /cheat-library/x64/Release
@@ -14,3 +15,5 @@
 /.vs/WarMil/v17/Browse.VC.db-wal
 /.vs/WarMil/v17/Browse.VC.opendb
 /.vs
+=======
+>>>>>>> 1bf061cf23e259ff5e30475e2ebfde43e4bdb8dc
