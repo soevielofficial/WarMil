@@ -1,0 +1,16 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/x64/Release
+/.vs/WarMil/FileContentIndex
+/.vs/WarMil/v17/ipch/AutoPCH
+/cheat-library/x64/Release
+/.vs/ProjectSettings.json
+/.vs/WarMil/v17/.suo
+/.vs/WarMil/v17/.wsuo
+/.vs/WarMil/v17/Browse.VC.db
+/.vs/WarMil/v17/Browse.VC.db-shm
+/.vs/WarMil/v17/Browse.VC.db-wal
+/.vs/WarMil/v17/Browse.VC.opendb
+/.vs
