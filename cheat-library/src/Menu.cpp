@@ -211,7 +211,7 @@ void menu::showMenu() {
 	if (ImGui::BeginTabItem("\t\t\tLainnya", &tab_support, ImGuiTabItemFlags_NoCloseButton))
 	{
 		ImGui::SetCursorPosX(5.f);
-		ImGui::Text("Versi saat ini: 1.8 (Terbaru)");
+		ImGui::Text("Versi saat ini: 1.0");
 		ImGui::SetCursorPosX(5.f);
 		ImGui::PushStyleVar(ImGuiStyleVar_FrameBorderSize, 1.f);
 		ImGui::Checkbox("Blokir input pengguna saat menu dibuka", &cfg::block_input);
@@ -219,8 +219,8 @@ void menu::showMenu() {
 		ImGui::SetCursorPosX(5.f);
 		ImGui::Text("Dukung penulis:");
 		std::vector<std::pair<std::string, std::string>> support{
-			{"Ko-Fi", "https:\/\/ko-fi.com\/soevielofficial"},
-			{"Saweria","https:\/\/saweria.co\/soevielofficial" }
+			{"Ko-Fi","https:\/\/ko-fi.com\/soevielofficial"},
+			{"Saweria","https:\/\/saweria.co\/soevielofficial"},
 		};
 		int i = 0;
 		ImGui::Indent();
@@ -228,7 +228,7 @@ void menu::showMenu() {
 			ImGui::Text("%s", key.c_str());
 			ImGui::SameLine();
 			ImGui::PushID(i++);
-			if (ImGui::Button("Copy")) {
+			if (ImGui::Button("Salin")) {
 				ImGui::SetClipboardText(value.c_str());
 			}
 			ImGui::PopID();
@@ -241,12 +241,17 @@ void menu::showMenu() {
 	{
 		if (def_tab)
 		{
-			auto text1 = "This tool made by soevielofficial";
+			auto text1 = "This tool modified by soevielofficial";
+			auto text2 = "Founded by monkrel";
 			auto windowWidth = ImGui::GetWindowSize().x;
 			auto textWidth = ImGui::CalcTextSize(text1).x;
 
 			ImGui::SetCursorPosX((windowWidth - textWidth) * 0.5f);
 			ImGui::Text(text1);
+
+			textWidth = ImGui::CalcTextSize(text2).x;
+			ImGui::SetCursorPosX((windowWidth - textWidth) * 0.5f);
+			ImGui::Text(text2);
 
 			ImGui::SetCursorPos({ (windowWidth - 100) * 0.5f ,150 });
 			ImGui::Button("Start", { 100,30 });
